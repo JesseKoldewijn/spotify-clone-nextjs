@@ -20,8 +20,8 @@ const ContentHeaderAuth = () => {
 		<>
 			{session ? (
 				<>
-					<div className="flex items-center justify-center gap-3">
-						<button className="bg-zinc-900 p-2 rounded-full transition-transform hover:scale-105">
+					<div className="flex items-center justify-center gap-1">
+						<button className="bg-zinc-950 p-2 rounded-full transition-transform hover:scale-105 text-zinc-400 hover:text-zinc-100">
 							<NotificationsIcon />
 						</button>
 						<UserImage />

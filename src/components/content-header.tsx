@@ -14,10 +14,10 @@ const ContentHeader = () => {
 			} relative  flex items-center justify-between px-6`}
 		>
 			<div className="flex gap-2">
-				<button className="grid place-items-center text-zinc-100 bg-black p-2 aspect-square rounded-full">
+				<button className="grid place-items-center text-zinc-100 bg-zinc-950 p-2 aspect-square rounded-full">
 					<ChevronLeft />
 				</button>
-				<button className="grid place-items-center text-zinc-100 bg-black p-2 aspect-square rounded-full">
+				<button className="grid place-items-center text-zinc-100 bg-zinc-950 p-2 aspect-square rounded-full">
 					<ChevronRight />
 				</button>
 			</div>

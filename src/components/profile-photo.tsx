@@ -3,7 +3,13 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import PopoverList from "./popover-list";
 
-const ProfilePhotoButton = ({ src, alt }: { src: string; alt: string }) => {
+const ProfilePhotoButton = ({
+	src,
+	alt,
+}: {
+	src: string;
+	alt: string | null | undefined;
+}) => {
 	const [showModal, setShowModal] = useState(false);
 
 	const location = document.getElementById("content-header");
