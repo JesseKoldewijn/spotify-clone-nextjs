@@ -1,0 +1,16 @@
+.body {
+	background: #000;
+	min-height: 100vh;
+	gap: 0.5rem;
+	padding: 0.5rem;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 1fr auto;
+	grid-template-areas:
+		"sidebar content content"
+		"player player player";
+}
+
+.body > * {
+	border-radius: 0.5rem;
+}

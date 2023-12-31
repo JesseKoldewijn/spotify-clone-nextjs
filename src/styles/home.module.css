@@ -1,0 +1,4 @@
+.sidebar {
+	grid-template-rows: auto 1fr;
+	overflow: hidden;
+}

@@ -3,25 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	color-scheme: dark light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+	font-family: "CircularStd", system-ui, sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	background: #000;
+	min-height: 100vh;
+	gap: 0.5rem;
+	padding: 0.5rem;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 1fr auto;
+	grid-template-areas:
+		"sidebar content content"
+		"player player player";
+}
+
+body > * {
+	border-radius: 0.5rem;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("/fonts/CircularStd-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("/fonts/CircularStd-Book.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("/fonts/CircularStd-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("/fonts/CircularStd-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("/fonts/CircularStd-Black.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
