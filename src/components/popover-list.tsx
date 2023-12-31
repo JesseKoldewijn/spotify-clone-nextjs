@@ -6,7 +6,7 @@ const PopoverList = ({ showModal }: { showModal?: boolean }) => {
 	return (
 		<>
 			<ul
-				className={`absolute text-sm flex flex-col gap-1 bg-zinc-800 right-4 top-12 p-1 [&>li]:transition-all rounded-lg ${
+				className={`absolute text-sm flex flex-col gap-1 bg-zinc-800 right-6 top-14 p-1 [&>li]:transition-all rounded-lg ${
 					showModal ? "opacity-100 animate-fadeIn" : "opacity-0 animate-fadeOut"
 				}`}
 			>
@@ -26,6 +26,7 @@ const PopoverList = ({ showModal }: { showModal?: boolean }) => {
 					<Link href={"#"}>Settings</Link>
 				</li>
 				<hr />
+
 				<li className="hover:bg-zinc-700 p-2 rounded">
 					<LogoutButton />
 				</li>
