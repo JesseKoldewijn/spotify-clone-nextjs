@@ -1,9 +1,8 @@
 "use client";
 import NotificationsIcon from "@/icons/notifications-icon";
 import { useSession } from "next-auth/react";
-import Image from "next/image";
 import LoginLink from "./login-link";
-import LogoutButton from "./logout-button";
+import ProfilePhotoButton from "./profile-photo";
 import SignUpLink from "./signup-link";
 
 const ContentHeaderAuth = () => {
@@ -11,13 +10,9 @@ const ContentHeaderAuth = () => {
 
 	const UserImage = () => {
 		return session?.user?.image ? (
-			<Image
-				src={session.user?.image}
-				alt={`Profile picture of ${session.user?.name}`}
-				width={28}
-				height={28}
-				className="rounded-full"
-			/>
+			<>
+				<ProfilePhotoButton src={session.user.image} alt={session.user.name} />
+			</>
 		) : null;
 	};
 
@@ -25,12 +20,11 @@ const ContentHeaderAuth = () => {
 		<>
 			{session ? (
 				<>
-					<div className="flex items-center gap-3">
-						<div className="bg-zinc-900 p-2 rounded-full transition-transform hover:scale-105">
+					<div className="flex items-center justify-center gap-3">
+						<button className="bg-zinc-900 p-2 rounded-full transition-transform hover:scale-105">
 							<NotificationsIcon />
-						</div>
+						</button>
 						<UserImage />
-						<LogoutButton />
 					</div>
 				</>
 			) : (
