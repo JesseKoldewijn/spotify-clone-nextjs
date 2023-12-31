@@ -1,12 +1,10 @@
-import Content from "@/components/content";
 import Player from "@/components/player";
-import Sidebar from "@/components/sidebar";
+import SliderProvider from "@/providers/slider-provider";
 
 export default function Home() {
 	return (
 		<>
-			<Sidebar />
-			<Content />
+			<SliderProvider />
 			<Player />
 		</>
 	);

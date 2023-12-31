@@ -5,7 +5,7 @@ import SidebarHeaderItem from "./sidebar-header-item";
 
 const SidebarHeader = () => {
 	return (
-		<header className="bg-zinc-900 py-4 px-6 flex flex-col gap-5 items-start">
+		<header className="bg-neutral-900 py-4 px-6 flex flex-col gap-5 items-start">
 			<SpotifyIcon />
 
 			<ul className="flex flex-col gap-5">
