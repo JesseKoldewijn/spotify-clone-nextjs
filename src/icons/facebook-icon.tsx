@@ -1,18 +1,15 @@
-const FacebookIcon = ({ width = 24, height = 24 }) => {
+const FacebookIcon = ({ width = 16, height = 16 }) => {
 	return (
 		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			x="0px"
-			y="0px"
+			role="img"
 			width={width}
 			height={height}
-			viewBox="0 0 48 48"
+			aria-hidden="true"
+			viewBox="0 0 16 16"
+			data-encore-id="icon"
+			fill="currentColor"
 		>
-			<path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
-			<path
-				fill="#fff"
-				d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"
-			></path>
+			<path d="M16 8a8 8 0 10-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0016 8z"></path>
 		</svg>
 	);
 };

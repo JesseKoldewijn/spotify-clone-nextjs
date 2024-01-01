@@ -12,7 +12,7 @@ const Sidebar = () => {
 			className={`${styles.sidebar} [grid-area:sidebar] [&>*]:rounded-lg text-base`}
 		>
 			<SidebarHeader />
-			<section className="bg-neutral-900 h-full">
+			<section className="bg-neutral-900 overflow-y-scroll">
 				<section className="flex justify-between px-6 py-4">
 					<button className="flex items-center gap-3 text-zinc-400 hover:text-zinc-100 transition-all">
 						<LibraryIcon />

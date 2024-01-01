@@ -1,5 +1,5 @@
 import AppleIcon from "@/icons/apple-icon";
-import FacebookIcon from "@/icons/facebook-icon";
+import FacebookIcon from "@/icons/facebook-icon-color";
 import GoogleIcon from "@/icons/google-icon";
 import LoginButton from "./login-button";
 
