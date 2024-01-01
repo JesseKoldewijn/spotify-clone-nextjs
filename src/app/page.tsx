@@ -1,11 +1,9 @@
-import Player from "@/components/player";
-import SliderProvider from "@/providers/slider-provider";
+import Content from "@/components/content";
 
 export default function Home() {
 	return (
 		<>
-			<SliderProvider />
-			<Player />
+			<Content />
 		</>
 	);
 }

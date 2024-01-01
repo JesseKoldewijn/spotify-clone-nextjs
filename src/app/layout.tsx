@@ -1,4 +1,6 @@
+import Player from "@/components/player";
 import AuthProvider from "@/providers/auth-provider";
+import SliderProvider from "@/providers/slider-provider";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -15,7 +17,10 @@ export default function RootLayout({
 	return (
 		<AuthProvider>
 			<html lang="en">
-				<body>{children}</body>
+				<body>
+					<SliderProvider>{children}</SliderProvider>
+					<Player />
+				</body>
 			</html>
 		</AuthProvider>
 	);
