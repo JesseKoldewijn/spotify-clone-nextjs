@@ -4,9 +4,13 @@ import MoreIcon from "@/icons/more-icon";
 import styles from "@styles/home.module.css";
 import SidebarHeader from "./sidebar-header";
 
+// TODO: Change font size if it looks very big or small in the future
+
 const Sidebar = () => {
 	return (
-		<aside className={`${styles.sidebar} [grid-area:sidebar] [&>*]:rounded-lg`}>
+		<aside
+			className={`${styles.sidebar} [grid-area:sidebar] [&>*]:rounded-lg text-base`}
+		>
 			<SidebarHeader />
 			<section className="bg-neutral-900 h-full">
 				<section className="flex justify-between px-6 py-4">
