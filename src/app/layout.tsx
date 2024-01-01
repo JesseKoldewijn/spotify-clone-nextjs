@@ -1,3 +1,5 @@
+import Content from "@/components/content";
+import ContentHeader from "@/components/content-header";
 import Player from "@/components/player";
 import AuthProvider from "@/providers/auth-provider";
 import SliderProvider from "@/providers/slider-provider";
@@ -18,7 +20,12 @@ export default function RootLayout({
 		<AuthProvider>
 			<html lang="en">
 				<body>
-					<SliderProvider>{children}</SliderProvider>
+					<SliderProvider>
+						<Content>
+							<ContentHeader />
+							{children}
+						</Content>
+					</SliderProvider>
 					<Player />
 				</body>
 			</html>

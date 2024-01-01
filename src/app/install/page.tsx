@@ -1,8 +1,10 @@
+import ContentMain from "@/components/content-main";
+
 const InstallPage = () => {
 	return (
-		<div>
-			<h1 className="text-5xl font-bold mt-4 text-center">Install page</h1>
-		</div>
+		<ContentMain>
+			<h1 className="text-3xl font-bold">Install page</h1>
+		</ContentMain>
 	);
 };
 

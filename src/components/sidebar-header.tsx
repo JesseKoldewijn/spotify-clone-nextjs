@@ -12,10 +12,10 @@ const SidebarHeader = () => {
 			{!session && <SpotifyIcon />}
 
 			<ul className="flex flex-col gap-5">
-				<SidebarHeaderItem name="Home">
+				<SidebarHeaderItem name="Home" href="/">
 					<HomeIcon />
 				</SidebarHeaderItem>
-				<SidebarHeaderItem name="Search">
+				<SidebarHeaderItem name="Search" href="/search">
 					<SearchIcon />
 				</SidebarHeaderItem>
 			</ul>

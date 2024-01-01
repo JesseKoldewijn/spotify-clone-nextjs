@@ -1,13 +1,9 @@
-import ContentHeader from "./content-header";
-import GreetingTitle from "./greeting-title";
+import { ReactNode } from "react";
 
-const Content = () => {
+const Content = ({ children }: { children?: ReactNode }) => {
 	return (
 		<div className="[grid-area:content] h-full bg-neutral-900 overflow-hidden rounded-lg">
-			<ContentHeader />
-			<main className="px-6 py-2">
-				<GreetingTitle />
-			</main>
+			<main>{children}</main>
 		</div>
 	);
 };
