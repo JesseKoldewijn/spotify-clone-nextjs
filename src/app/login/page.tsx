@@ -1,3 +1,4 @@
+import LoginForm from "@/components/login-form";
 import LoginProviders from "@/components/login-providers";
 import SpotifyIcon from "@/icons/spotify-icon";
 import Link from "next/link";
@@ -20,34 +21,7 @@ const LoginPage = () => {
 					</section>
 					<hr className="h-px my-8 bg-gray-200 border-0 rounded-full dark:bg-gray-700" />
 
-					<form action="" className="flex flex-col gap-4">
-						<div className="flex flex-col gap-2">
-							<label htmlFor="username" className="text-sm font-bold">
-								Email or username
-							</label>
-							<input
-								type="text"
-								placeholder="Email or username"
-								className="p-2 rounded"
-							/>
-						</div>
-						<div className="flex flex-col gap-2">
-							<label htmlFor="username" className="text-sm font-bold">
-								Password
-							</label>
-							<input
-								type="password"
-								placeholder="Password"
-								className="p-2 rounded"
-							/>
-						</div>
-						<button
-							type="submit"
-							className="bg-green-500 py-3 px-7 mt-3 transition-all hover:scale-105 rounded-full"
-						>
-							<span className="text-black font-bold">Log in</span>
-						</button>
-					</form>
+					<LoginForm />
 
 					<Link href="/">
 						<h3 className="my-6 hover:underline text-center hover:text-green-500">
@@ -56,6 +30,13 @@ const LoginPage = () => {
 					</Link>
 
 					<hr className="h-px my-8 bg-gray-200 border-0 rounded-full dark:bg-gray-700" />
+
+					<p className="text-center pt-2 text-zinc-300">
+						Don&apos;t have an account?{" "}
+						<Link href={"/"} className="hover:underline">
+							Sign up for spotify
+						</Link>
+					</p>
 				</div>
 			</main>
 		</>

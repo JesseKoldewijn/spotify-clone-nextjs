@@ -29,9 +29,11 @@ const ContentHeaderAuth = () => {
 								<h6 className="text-sm font-bold">Install app</h6>
 							</button>
 						</Link>
-						<button className="bg-zinc-950 p-2 rounded-full transition-transform hover:scale-105 text-zinc-400 hover:text-zinc-100">
-							<NotificationsIcon />
-						</button>
+						<Link href={"/notifications"}>
+							<button className="bg-zinc-950 p-2 rounded-full transition-transform hover:scale-105 text-zinc-400 hover:text-zinc-100">
+								<NotificationsIcon />
+							</button>
+						</Link>
 						<UserImage />
 					</div>
 				</>

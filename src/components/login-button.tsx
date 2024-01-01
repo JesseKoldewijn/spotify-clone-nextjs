@@ -21,7 +21,7 @@ const LoginButton = ({
 			className="flex items-center justify-center gap-8 border py-3 px-5 rounded-full"
 		>
 			{children}
-			<p>Continue with {name}</p>
+			<p className="text-zinc-200 font-bold">Continue with {name}</p>
 		</button>
 	);
 };
