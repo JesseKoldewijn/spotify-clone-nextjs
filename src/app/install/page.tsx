@@ -13,6 +13,7 @@ const InstallPage = () => {
 					alt="Spotify Image"
 					width={640}
 					height={396}
+					className="pt-20"
 				/>
 				<p className="text-[2rem] leading-10 -tracking-wider font-bold text-center mb-6">
 					Seamlessly listen to music you love. Download the Spotify app for your
@@ -20,8 +21,8 @@ const InstallPage = () => {
 				</p>
 
 				<Link href={"#"}>
-					<button className="bg-green-500 py-3 px-6 rounded-full transition-all hover:scale-105">
-						<h4 className="font-semibold text-black">Get our free app</h4>
+					<button className="bg-green-500 py-3 px-8 rounded-full transition-all hover:scale-105">
+						<h4 className="font-bold text-black">Get our free app</h4>
 					</button>
 				</Link>
 			</div>
