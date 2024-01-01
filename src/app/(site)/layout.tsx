@@ -1,10 +1,10 @@
+import "@/app/globals.css";
 import Content from "@/components/content";
 import ContentHeader from "@/components/content-header";
 import Player from "@/components/player";
 import AuthProvider from "@/providers/auth-provider";
 import SliderProvider from "@/providers/slider-provider";
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
 	title: "Spotify Clone",
