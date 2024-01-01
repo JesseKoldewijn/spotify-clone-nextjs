@@ -7,7 +7,9 @@ const PopoverList = ({ showModal }: { showModal?: boolean }) => {
 		<>
 			<ul
 				className={`absolute text-sm flex flex-col gap-1 bg-zinc-800 right-6 top-14 p-1 [&>li]:transition-all rounded-lg ${
-					showModal ? "opacity-100 animate-fadeIn" : "opacity-0 animate-fadeOut"
+					showModal
+						? "opacity-100 animate-fadeIn"
+						: "opacity-0 hidden animate-fadeOut"
 				}`}
 			>
 				<li>
