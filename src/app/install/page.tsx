@@ -20,7 +20,7 @@ const InstallPage = () => {
 				</p>
 
 				<Link href={"#"}>
-					<button className="bg-green-500 py-3 px-6 rounded-full">
+					<button className="bg-green-500 py-3 px-6 rounded-full transition-all hover:scale-105">
 						<h4 className="font-semibold text-black">Get our free app</h4>
 					</button>
 				</Link>

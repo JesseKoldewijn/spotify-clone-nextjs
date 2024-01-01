@@ -22,11 +22,11 @@ const ContentHeaderAuth = () => {
 		<>
 			{session ? (
 				<>
-					<div className="flex items-center justify-center gap-1">
+					<div className="flex items-center justify-center gap-2">
 						<Link href={"/install"}>
-							<button className="px-3 py-[0.3125rem] rounded-full flex gap-2 items-center bg-zinc-950 justify-center transition-all hover:scale-[1.03]">
+							<button className="px-3 py-[0.3125rem] rounded-full flex gap-1 items-center bg-zinc-950 justify-center transition-all hover:scale-[1.03]">
 								<InstallIcon />
-								<h6 className="text-sm">Install app</h6>
+								<h6 className="text-sm font-bold">Install app</h6>
 							</button>
 						</Link>
 						<button className="bg-zinc-950 p-2 rounded-full transition-transform hover:scale-105 text-zinc-400 hover:text-zinc-100">
