@@ -27,6 +27,11 @@
 	grid-template-rows: 1fr;
 }
 
+.searchContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
 .fadeButton {
 	transition: opacity 0.5s ease-in-out;
 	position: absolute;

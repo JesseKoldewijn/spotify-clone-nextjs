@@ -10,8 +10,8 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<ContentMain>
-			<div className="px-6 pt-3 pb-[5.5rem] flex flex-col gap-28">
-				<main>
+			<main className="px-6 pt-3 pb-[5.5rem] flex flex-col gap-28">
+				<div>
 					<GreetingTitle />
 
 					<div className="sections flex flex-col gap-12">
@@ -54,8 +54,8 @@ export default function Home() {
 						<PageSection title="Made in Medellin" />
 						<PageSection title="Recommended radio" />
 					</div>
-				</main>
-			</div>
+				</div>
+			</main>
 		</ContentMain>
 	);
 }
