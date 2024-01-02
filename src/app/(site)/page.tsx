@@ -1,11 +1,68 @@
 import ContentMain from "@/components/content-main";
+import DailyMix from "@/components/daily-mix";
+import DailyMixCard from "@/components/daily-mix-card";
+import DailyMixContainer from "@/components/daily-mix-container";
+import Footer from "@/components/footer";
 import GreetingTitle from "@/components/greeting-title";
+import PageSection from "@/components/page-section";
+import TitleUser from "@/components/title-user";
+import Link from "next/link";
 
 export default function Home() {
 	return (
 		<ContentMain>
-			<div className="px-6 py-3">
-				<GreetingTitle />
+			<div className="px-6 pt-3 pb-[5.5rem] flex flex-col gap-28">
+				<main>
+					<GreetingTitle />
+
+					<div className="sections flex flex-col gap-12">
+						<section className="grid grid-cols-4 gap-x-3">
+							<DailyMix />
+							<DailyMix />
+							<DailyMix />
+							<DailyMix />
+						</section>
+
+						<section>
+							<div className="flex justify-between">
+								<h2 className="-tracking-wider font-bold text-2xl mb-4">
+									Made for <TitleUser />
+								</h2>
+
+								<Link
+									href={"#"}
+									className="hover:underline text-zinc-400 font-bold text-sm"
+								>
+									Show all
+								</Link>
+							</div>
+
+							<DailyMixContainer>
+								<DailyMixCard />
+								<DailyMixCard />
+								<DailyMixCard />
+								<DailyMixCard />
+								<DailyMixCard />
+								<DailyMixCard />
+								<DailyMixCard />
+							</DailyMixContainer>
+						</section>
+
+						<PageSection title="Your top mixes" />
+						<PageSection title="Recently played" />
+						<PageSection title="Episodes for you" />
+						<PageSection title="Based on your recent listening" />
+						<PageSection title="Popular albums" />
+						<PageSection title="En tendencia" />
+						<PageSection title="Today's biggest hit" />
+						<PageSection title="Popular radio" />
+						<PageSection title="Colombia's favourite artists" />
+						<PageSection title="Salsa idols" />
+						<PageSection title="Made in Medellin" />
+						<PageSection title="Recommended radio" />
+					</div>
+				</main>
+				<Footer />
 			</div>
 		</ContentMain>
 	);

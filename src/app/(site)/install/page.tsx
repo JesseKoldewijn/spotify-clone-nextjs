@@ -1,5 +1,5 @@
 import ContentMain from "@/components/content-main";
-import InstallFooter from "@/components/install-footer";
+import InstallFooter from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
