@@ -1,5 +1,4 @@
 import ContentMain from "@/components/content-main";
-import InstallFooter from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ const InstallPage = () => {
 	return (
 		<ContentMain>
 			<div className="flex flex-col gap-32 bg-gradient-to-b from-blue-950 via-neutral-900 to-neutral-900 px-8 pb-20">
-				<main className="h-full max-w-[640px] mx-auto flex flex-col justify-center items-center">
+				<main className="max-w-[640px] mx-auto flex flex-col justify-center items-center">
 					<Image
 						src={
 							"https://open.spotifycdn.com/cdn/images/devices/mac.3fbeb8c6.png"
@@ -32,8 +31,6 @@ const InstallPage = () => {
 						</button>
 					</Link>
 				</main>
-
-				<InstallFooter />
 			</div>
 		</ContentMain>
 	);

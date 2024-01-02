@@ -1,7 +1,6 @@
 import ContentMain from "@/components/content-main";
 import DailyMix from "@/components/daily-mix";
 import DailyMixContainer from "@/components/daily-mix-container";
-import Footer from "@/components/footer";
 import GreetingTitle from "@/components/greeting-title";
 import PageSection from "@/components/page-section";
 import TitleUser from "@/components/title-user";
@@ -55,7 +54,6 @@ export default function Home() {
 						<PageSection title="Recommended radio" />
 					</div>
 				</main>
-				<Footer />
 			</div>
 		</ContentMain>
 	);

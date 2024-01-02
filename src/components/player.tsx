@@ -1,5 +1,5 @@
 const Player = () => {
-	return <footer className="[grid-area:player] min-h-24">player</footer>;
+	return <section className="[grid-area:player] min-h-24">player</section>;
 };
 
 export default Player;
