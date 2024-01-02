@@ -22,10 +22,10 @@ const PopoverList = ({ showModal }: { showModal?: boolean }) => {
 					</Link>
 				</li>
 				<li className="hover:bg-zinc-700 p-2 rounded">
-					<Link href={"#"}>Profile</Link>
+					<Link href={"/profile"}>Profile</Link>
 				</li>
 				<li className="hover:bg-zinc-700 p-2 rounded">
-					<Link href={"#"}>Settings</Link>
+					<Link href={"/settings"}>Settings</Link>
 				</li>
 				<hr />
 
