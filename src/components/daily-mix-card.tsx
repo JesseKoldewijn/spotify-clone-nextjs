@@ -14,7 +14,7 @@ const DailyMixCard = () => {
 			onMouseEnter={() => setIsHovering(true)}
 			onMouseLeave={() => setIsHovering(false)}
 		>
-			<article className="p-3 relative flex flex-col bg-zinc-800 hover:bg-zinc-700 transition-colors rounded-lg">
+			<article className="group p-3 relative flex flex-col bg-zinc-800 hover:bg-zinc-700 hover:shadow-xl transition-all rounded-lg">
 				<figure>
 					<Image
 						src={pokeball}
@@ -29,7 +29,11 @@ const DailyMixCard = () => {
 					expedita dicta, ipsam voluptates quo ipsum minus. Recusandae tempora
 					voluptatem facilis corrupti!
 				</p>
-				{isHovering && <PlayButton />}
+				<button
+					className={`absolute right-[-2px] bottom-0 translate-y-4 transition-all duration-500 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 z-10`}
+				>
+					<PlayButton />
+				</button>
 			</article>
 		</Link>
 	);

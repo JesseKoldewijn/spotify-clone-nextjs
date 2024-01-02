@@ -2,7 +2,7 @@ import "@/app/globals.css";
 import Content from "@/components/content";
 import ContentHeader from "@/components/content-header";
 import Footer from "@/components/footer";
-import Player from "@/components/player";
+import PlayerTab from "@/components/player-tab";
 import AuthProvider from "@/providers/auth-provider";
 import SliderProvider from "@/providers/slider-provider";
 import type { Metadata } from "next";
@@ -28,7 +28,7 @@ export default function RootLayout({
 							<Footer />
 						</Content>
 					</SliderProvider>
-					<Player />
+					<PlayerTab />
 				</body>
 			</html>
 		</AuthProvider>

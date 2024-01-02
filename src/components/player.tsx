@@ -1,35 +1,23 @@
-import LikeIcon from "@/icons/like-icon";
-import pokeball from "@images/pokeball.webp";
-import Image from "next/image";
-import Link from "next/link";
+import LoopIcon from "@/icons/loop-icon";
+import NextSong from "@/icons/next-song";
+import PlayIcon from "@/icons/play-icon";
+import PreviousSong from "@/icons/previous-song";
+import ShuffleIcon from "@/icons/shuffle-icon";
 
 const Player = () => {
 	return (
-		<section className="[grid-area:player] p-3">
-			<section className="flex gap-4 items-center">
-				<figure>
-					<Image
-						src={pokeball}
-						alt="Placeholder image"
-						width={56}
-						height={56}
-						className="rounded-md"
-					/>
-				</figure>
-
-				<div className="flex flex-col mt-1">
-					<Link href={"#"} className="hover:underline">
-						<h3 className="text-sm">Song name</h3>
-					</Link>
-					<Link href={"#"} className="hover:underline">
-						<h4 className="text-xs text-zinc-400 pr-4">Song artist</h4>
-					</Link>
-				</div>
-				<button>
-					<LikeIcon />
+		<div>
+			<div className="flex gap-4 items-center text-zinc-400">
+				<ShuffleIcon />
+				<PreviousSong />
+				<button className="bg-white p-2 rounded-full">
+					<PlayIcon />
 				</button>
-			</section>
-		</section>
+				<NextSong />
+				<LoopIcon />
+			</div>
+			<div></div>
+		</div>
 	);
 };
 
