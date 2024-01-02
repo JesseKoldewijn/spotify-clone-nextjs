@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ReactNode } from "react";
-import DailyMixCard from "./daily-mix-card";
 import DailyMixContainer from "./daily-mix-container";
 
 const PageSection = ({
@@ -13,7 +12,9 @@ const PageSection = ({
 	return (
 		<section>
 			<div className="flex justify-between">
-				<h2 className="-tracking-wider font-bold text-2xl mb-4">{title}</h2>
+				<Link href={"#"} className="hover:underline">
+					<h2 className="-tracking-wider font-bold text-2xl mb-4">{title}</h2>
+				</Link>
 				<Link
 					href={"#"}
 					className="hover:underline text-zinc-400 font-bold text-sm"
@@ -22,15 +23,7 @@ const PageSection = ({
 				</Link>
 			</div>
 
-			<DailyMixContainer>
-				<DailyMixCard />
-				<DailyMixCard />
-				<DailyMixCard />
-				<DailyMixCard />
-				<DailyMixCard />
-				<DailyMixCard />
-				<DailyMixCard />
-			</DailyMixContainer>
+			<DailyMixContainer />
 		</section>
 	);
 };

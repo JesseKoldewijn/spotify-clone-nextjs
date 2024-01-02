@@ -1,6 +1,5 @@
 import ContentMain from "@/components/content-main";
 import DailyMix from "@/components/daily-mix";
-import DailyMixCard from "@/components/daily-mix-card";
 import DailyMixContainer from "@/components/daily-mix-container";
 import Footer from "@/components/footer";
 import GreetingTitle from "@/components/greeting-title";
@@ -25,9 +24,11 @@ export default function Home() {
 
 						<section>
 							<div className="flex justify-between">
-								<h2 className="-tracking-wider font-bold text-2xl mb-4">
-									Made for <TitleUser />
-								</h2>
+								<Link href={"#"} className="hover:underline">
+									<h2 className="-tracking-wider font-bold text-2xl mb-4">
+										Made for <TitleUser />
+									</h2>
+								</Link>
 
 								<Link
 									href={"#"}
@@ -37,15 +38,7 @@ export default function Home() {
 								</Link>
 							</div>
 
-							<DailyMixContainer>
-								<DailyMixCard />
-								<DailyMixCard />
-								<DailyMixCard />
-								<DailyMixCard />
-								<DailyMixCard />
-								<DailyMixCard />
-								<DailyMixCard />
-							</DailyMixContainer>
+							<DailyMixContainer />
 						</section>
 
 						<PageSection title="Your top mixes" />
