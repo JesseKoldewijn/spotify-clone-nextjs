@@ -6,7 +6,7 @@ import Link from "next/link";
 const InstallPage = () => {
 	return (
 		<ContentMain>
-			<div className="flex flex-col gap-32">
+			<div className="flex flex-col gap-32 bg-gradient-to-b from-blue-950 via-neutral-900 to-neutral-900 px-8 pb-20">
 				<main className="h-full max-w-[640px] mx-auto flex flex-col justify-center items-center">
 					<Image
 						src={
@@ -22,7 +22,11 @@ const InstallPage = () => {
 						your computer.
 					</p>
 
-					<Link href={"#"}>
+					<Link
+						href={"https://www.spotify.com/co-en/download/windows/"}
+						target="_blank"
+						rel="noopener norreferer"
+					>
 						<button className="bg-green-500 py-3 px-8 rounded-full transition-all hover:scale-105">
 							<h4 className="font-bold text-black">Get our free app</h4>
 						</button>
