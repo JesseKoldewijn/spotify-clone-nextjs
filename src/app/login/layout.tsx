@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
 			<body
-				className={`bg-gradient-to-b from-neutral-800 via-neutral-900 to-zinc-950  ${styles.login}`}
+				className={`bg-gradient-to-b from-neutral-800 via-neutral-900 to-zinc-950 h-full  ${styles.login}`}
 			>
 				{children}
 			</body>
