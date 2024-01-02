@@ -4,7 +4,9 @@ import GreetingTitle from "@/components/greeting-title";
 export default function Home() {
 	return (
 		<ContentMain>
-			<GreetingTitle />
+			<div className="px-6 py-3">
+				<GreetingTitle />
+			</div>
 		</ContentMain>
 	);
 }

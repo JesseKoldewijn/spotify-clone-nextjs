@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 const Content = ({ children }: { children?: ReactNode }) => {
 	return (
-		<div className="[grid-area:content] flex flex-col h-full rounded-lg overflow-hidden">
+		<div className="[grid-area:content] bg-zinc-900 flex flex-col h-full rounded-lg overflow-hidden">
 			{children}
 		</div>
 	);
