@@ -2,8 +2,8 @@ import FacebookIcon from "@/icons/facebook-icon";
 import InstagramIcon from "@/icons/instagram-icon";
 import TwitterIcon from "@/icons/twitter-icon";
 import Link from "next/link";
-import FooterItem from "./footer-item";
-import FooterList from "./footer-list";
+import FooterItem from "./install-footer-item";
+import FooterList from "./install-footer-list";
 
 const Footer = () => {
 	return (

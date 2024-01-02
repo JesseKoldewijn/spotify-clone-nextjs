@@ -1,9 +1,9 @@
 "use client";
-import PlayIcon from "@/icons/play-icon";
 import pokeball from "@images/pokeball.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import PlayButton from "./play-button";
 
 const DailyMixCard = () => {
 	const [isHovering, setIsHovering] = useState(false);
@@ -29,11 +29,7 @@ const DailyMixCard = () => {
 					expedita dicta, ipsam voluptates quo ipsum minus. Recusandae tempora
 					voluptatem facilis corrupti!
 				</p>
-				{isHovering && (
-					<button className="bg-green-500 transition-all hover:scale-105 p-3 rounded-full absolute bottom-24 right-5">
-						<PlayIcon />
-					</button>
-				)}
+				{isHovering && <PlayButton />}
 			</article>
 		</Link>
 	);
