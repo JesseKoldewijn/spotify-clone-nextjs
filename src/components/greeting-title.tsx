@@ -10,7 +10,7 @@ const GreetingTitle = () => {
 
 	const RenderTitle = ({ time }: { time: string }) => {
 		return (
-			<h2 className="text-3xl font-bold">
+			<h2 className="text-3xl font-bold -tracking-wider">
 				Good {time}, {session?.user?.name}!
 			</h2>
 		);
