@@ -20,7 +20,7 @@ const GreetingTitle = () => {
 
 			{hours >= 12 && hours < 18 && session && <RenderTitle time="afternoon" />}
 
-			{hours > 18 && session && <RenderTitle time="evening" />}
+			{hours >= 18 && session && <RenderTitle time="evening" />}
 
 			{!session && (
 				<h2 className="text-2xl font-bold">

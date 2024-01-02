@@ -5,7 +5,7 @@ import Link from "next/link";
 const SearchCard = ({ title, href }: { title: string; href?: string }) => {
 	return (
 		<Link href={"#"}>
-			<article className="bg-green-500 rounded-md relative overflow-hidden p-3 aspect-square">
+			<article className="bg-teal-800 rounded-md relative overflow-hidden p-3 aspect-square">
 				<h3 className="-tracking-wider text-2xl font-bold">{title}</h3>
 				<Image
 					src={pokeball}

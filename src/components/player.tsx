@@ -1,8 +1,8 @@
 import LoopIcon from "@/icons/loop-icon";
 import NextSong from "@/icons/next-song";
-import PlayIcon from "@/icons/play-icon";
 import PreviousSong from "@/icons/previous-song";
 import ShuffleIcon from "@/icons/shuffle-icon";
+import PlayButton from "./play-button";
 import PlayerButton from "./player-button";
 import { Slider } from "./ui/slider";
 
@@ -13,15 +13,21 @@ const Player = () => {
 				<PlayerButton>
 					<ShuffleIcon />
 				</PlayerButton>
+
 				<PlayerButton>
 					<PreviousSong />
 				</PlayerButton>
-				<button className="transition-all bg-white p-2 rounded-full hover:scale-105">
-					<PlayIcon width={16} height={16} />
-				</button>
+
+				<PlayButton
+					styles="bg-white rounded-full p-2 transition-all hover:scale-105"
+					width={16}
+					height={16}
+				/>
+
 				<PlayerButton>
 					<NextSong />
 				</PlayerButton>
+
 				<PlayerButton>
 					<LoopIcon />
 				</PlayerButton>

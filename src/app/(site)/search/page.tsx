@@ -1,10 +1,11 @@
 import ContentMain from "@/components/content-main";
+import Footer from "@/components/footer";
 import SearchCard from "@/components/search-card";
 import styles from "@styles/page.module.css";
 
 const SearchPage = () => {
 	return (
-		<ContentMain>
+		<ContentMain bgColor="bg-zinc-900">
 			<main className="px-6 py-6">
 				<h1 className=" text-2xl font-bold -tracking-wider mb-6">Browse all</h1>
 
@@ -14,6 +15,7 @@ const SearchPage = () => {
 					))}
 				</section>
 			</main>
+			<Footer />
 		</ContentMain>
 	);
 };

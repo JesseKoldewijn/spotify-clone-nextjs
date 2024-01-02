@@ -4,7 +4,7 @@ import DailyMixCard from "./daily-mix-card";
 
 const DailyMixContainer = ({ children }: { children?: ReactNode }) => {
 	return (
-		<div className={`gap-4 ${styles.cardContainer}`}>
+		<div className={`gap-6 ${styles.cardContainer}`}>
 			<DailyMixCard />
 			<DailyMixCard />
 			<DailyMixCard />

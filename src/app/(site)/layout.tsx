@@ -1,7 +1,6 @@
 import "@/app/globals.css";
 import Content from "@/components/content";
 import ContentHeader from "@/components/content-header";
-import Footer from "@/components/footer";
 import PlayerTab from "@/components/player-tab";
 import AuthProvider from "@/providers/auth-provider";
 import SliderProvider from "@/providers/slider-provider";
@@ -25,7 +24,6 @@ export default function RootLayout({
 						<Content>
 							<ContentHeader />
 							{children}
-							<Footer />
 						</Content>
 					</SliderProvider>
 					<PlayerTab />
