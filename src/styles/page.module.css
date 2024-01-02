@@ -51,3 +51,8 @@
 .fadeButtonShow {
 	opacity: 1;
 }
+
+.player {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}

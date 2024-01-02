@@ -21,11 +21,11 @@ const DailyMixCard = () => {
 					expedita dicta, ipsam voluptates quo ipsum minus. Recusandae tempora
 					voluptatem facilis corrupti!
 				</p>
-				<button
+				<div
 					className={`absolute right-[-2px] bottom-0 translate-y-4 transition-all duration-500 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 z-10`}
 				>
 					<PlayButton />
-				</button>
+				</div>
 			</article>
 		</Link>
 	);
