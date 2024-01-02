@@ -1,19 +1,11 @@
-"use client";
 import pokeball from "@images/pokeball.webp";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import PlayButton from "./play-button";
 
 const DailyMixCard = () => {
-	const [isHovering, setIsHovering] = useState(false);
-
 	return (
-		<Link
-			href={"#"}
-			onMouseEnter={() => setIsHovering(true)}
-			onMouseLeave={() => setIsHovering(false)}
-		>
+		<Link href={"#"}>
 			<article className="group p-3 relative flex flex-col bg-zinc-800 hover:bg-zinc-700 hover:shadow-xl transition-all rounded-lg">
 				<figure>
 					<Image
