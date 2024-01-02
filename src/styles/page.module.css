@@ -20,3 +20,29 @@
 	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 	grid-template-rows: 1fr;
 }
+
+.cardContainerTwo {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-rows: 1fr;
+}
+
+.fadeButton {
+	transition: opacity 0.5s ease-in-out;
+	position: absolute;
+	bottom: 24px;
+	right: 5px;
+	background-color: green;
+	padding: 8px;
+	border-radius: 50%;
+	opacity: 0; /* Default state */
+}
+
+.fadeButtonHide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.fadeButtonShow {
+	opacity: 1;
+}

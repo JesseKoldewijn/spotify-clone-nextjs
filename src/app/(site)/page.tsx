@@ -4,6 +4,7 @@ import DailyMixContainer from "@/components/daily-mix-container";
 import GreetingTitle from "@/components/greeting-title";
 import PageSection from "@/components/page-section";
 import TitleUser from "@/components/title-user";
+import styles from "@styles/page.module.css";
 import Link from "next/link";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
 					<GreetingTitle />
 
 					<div className="sections flex flex-col gap-12">
-						<section className="grid grid-cols-4 gap-x-3">
+						<section className={`${styles.cardContainerTwo} gap-3`}>
 							<DailyMix />
 							<DailyMix />
 							<DailyMix />
